@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+</head>
+
+<body>
+    <header id="first">
+        <div class="container">
+            <div class="front side">
+                <div class="content">
+                    <h1>BMI Introduction</h1>
+                    <div class="contentTwo">
+                        <div class="para">
+                            <p>A BMI (Body Mass Index) calculator is a tool that assesses an individual's body weight
+                                relative to their height. It's calculated by dividing a person's weight in kilograms by
+                                the square of their height in meters. The resulting number is categorized into different
+                                ranges, such as underweight, normal weight, overweight, and obesity, helping to provide
+                                a general indication of one's health status in terms of weight. However, it doesn't
+                                directly measure body fat percentage or overall health, and should be considered
+                                alongside other health factors for a comprehensive evaluation.
+                            </p>
+                            <!-- <button class="calculate" id="flip">Check BMI</button> -->
+                        </div>
+                        <div class="tables">
+                            <h3>BMI Table</h3>
+
+                            <table class="zigzag">
+                                <thead>
+                                    <tr>
+                                        <th>BMI</th>
+                                        <th>Nutritional status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Below 18.5</td>
+                                        <td>Underweight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.5-24.9</td>
+                                        <td>Normal Weight</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25.0-29.9</td>
+                                        <td>Pre-obesity</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30.0-34.9</td>
+                                        <td>Obesity class-I</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35.0-39.9</td>
+                                        <td>Obesity class-II</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Above 40</td>
+                                        <td>Obesity class-III</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hovr" id="one">Hover for BMI Calculater</div>
+                <div class="hovr" id="two">Click for BMI Calculater</div>
+            </div>
+            <div class="back side">
+                <div class="content">
+                    <h1>BMI Calculator</h1>
+                    <div class="form">
+                        <div class="inputP">
+                            <label for="height">Height (cm):</label>
+                            <input type="text" id="height" placeholder="Height in cm" autocomplete="off">
+                            <label for="weight">Weight (kg):</label>
+                            <input type="text" id="weight" placeholder="Weight in kg" autocomplete="off">
+                        </div>
+                    </div>
+                    <button class="calculate">Check BMI</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="second">
+        <div class="result">
+            <div class="front sideTwo">
+                <div class="contents">
+                    <h1>BMI Result</h1>
+                    <div class="details">
+                        <div class="ht">
+                            <p>Height&nbsp:&nbsp</p>
+                            <span id="heights"></span>
+                            <p>&nbspcm</p>
+                        </div>
+                        <div class="wt">
+                            <p>Weight&nbsp:&nbsp</p>
+                            <span id="weights"></span>
+                            <p>&nbspkg</p>
+                        </div>
+                        <div class="score">
+                            <span id="bmiiii"></span>
+                        </div>
+                        <form>
+                            <button class="calculate">Back</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="blackWhite">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            
+            <span class="ball"></span>
+        </label>
+    </div>
+
+
+        <script src="bmi.js"></script>
+</body>
+
+</html>
